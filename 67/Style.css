@@ -1,0 +1,87 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffeef2;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.bear-img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #d63384;
+    font-size: 1.8rem;
+}
+
+.buttons {
+    margin-top: 20px;
+    position: relative;
+    height: 50px;
+}
+
+.btn {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.yes { background-color: #ff4d6d; color: white; }
+.no { background-color: #6c757d; color: white; position: absolute; }
+
+.step { display: none; }
+.active { display: block; }
+
+/* Animasi Hati */
+.heart {
+    position: absolute;
+    color: #ff4d6d;
+    font-size: 20px;
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to { transform: translateY(100vh); opacity: 0; }
+}
+
+
+.whatsapp {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+#final-message {
+    padding: 0 20px;
+    line-height: 1.4;
+}
+
+

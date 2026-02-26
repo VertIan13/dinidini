@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Love? ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div id="hearts-container"></div>
+    
+    <div class="container">
+        <div id="step1" class="step active">
+            <img src="Media/bear-asking.jpg" alt="Cute Bear" class="bear-img">
+            <h1>Do You Love Me? ❤️</h1>
+            <div class="buttons">
+                <button class="btn yes" onclick="nextStep(2)">Yes</button>
+                <button class="btn no" id="noButton" onmouseover="moveButton()">No</button>
+            </div>
+        </div>
+
+
+    <div id="step2" class="step">
+        <img src="Media/bear-sure.jpg" alt="Thinking Bear" class="bear-img">
+        <h1>Are you sure you Love me? 🥺</h1>
+        <div class="buttons">
+            <button class="btn yes" onclick="nextStep(3)">Yes, 100% Sure!</button>
+            <button class="btn no" onclick="alert('You cant say no here! 😜')">Let me think...</button>
+        </div>
+    </div>
+
+    <div id="step3" class="step">
+        <img src="Media/bear-hug.jpg" alt="Happy Bear" class="bear-img">
+        <h1 id="final-message">Yeeey! I Love You More! 💖</h1>
+        <p>Text me here 👇</p>
+        <a href="https://wa.me/628525207093" class="btn whatsapp">Text me here 💌</a>
+    </div>
+</div>
+
+       
+
+    <script src="script.js"></script>
+</body>
+</html>
